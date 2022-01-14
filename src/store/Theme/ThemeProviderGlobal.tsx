@@ -1,6 +1,7 @@
-import React, { FC, useContext, useReducer } from 'react'
+import React, { FC, useContext, useEffect, useReducer } from 'react'
 import { ThemeProvider } from 'styled-components'
 import { GlobalStyles } from 'styles'
+import { TYPE_THEME } from '.'
 import ThemeContext from './ThemeContext'
 import themeReducer from './themeReducer'
 import { stateThemeInitial } from './themeState'
@@ -22,6 +23,12 @@ const ThemeProviderGlobal: FC = ({ children }) => {
 const ThemeStyledComponent: FC = ({ children }) => {
   const [storeTheme, dispatchTheme] = useContext(ThemeContext)
   const { modeTheme } = storeTheme
+
+  useEffect(() => {
+    const nameModeTheme = window.localStorage.getItem('themeMode')
+    console.log(nameModeTheme)
+    dispatchTheme({ type: TYPE_THEME.THEME_TOGGLE_MODE, payload: nameModeTheme })
+  }, [])
 
   return (
     <ThemeProvider theme={modeTheme}>
