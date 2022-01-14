@@ -9,7 +9,7 @@ const BannerFullWidth = () => {
         <Flex alignItems="center">
           <BannerCaption>
             <TitleBanner>Don&apos;t listen to what they say <span>go and see</span></TitleBanner>
-            <Lead>
+            <Lead color="secondary">
               Travelling with our app is easy. <br />Join the biggest community of travellers.
             </Lead>
           </BannerCaption>
