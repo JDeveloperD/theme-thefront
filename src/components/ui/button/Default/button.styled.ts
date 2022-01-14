@@ -31,6 +31,17 @@ const ButtonContainer = styled.span`
       }
     `
 : null}
+
+    ${({ shape }) => shape === 'circle'
+? css`
+      padding: 0;
+      border-radius: 50em;
+      padding: 1rem;
+      width: 3.5rem;
+      height: 3.5rem;
+      align-items: center;
+    `
+ : null}
   }
 `
 
