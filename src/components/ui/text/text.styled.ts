@@ -28,7 +28,11 @@ const LeadFont = styled.p`
 `
 
 const TitleFont = styled.h3`
-  font-size: 2.0243rem;
+  font-size: 1.8219rem;
+
+  ${MEDIA_BREAKPOINTS.tablet} {
+    font-size: 2.0243rem;
+  }
 `
 
 export {

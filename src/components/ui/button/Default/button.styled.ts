@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components'
 import { resetButton } from 'styles/mixins'
 import { BORDER_RADIUS, TRANSITIONS } from 'styles/variables'
-import { darken, lighten } from 'polished'
+import { darken, lighten, rgba } from 'polished'
 
 const ButtonContainer = styled.div`
   display: inline-block;
@@ -27,7 +27,7 @@ const ButtonContainer = styled.div`
       border-color: ${({ theme }) => lighten(0.2, theme.colors.primary)};
 
       &:hover {
-        background: ${({ theme }) => lighten(0.37, theme.colors.primary)};
+        background: ${({ theme }) => rgba(theme.colors.primary, 0.07)};
         color: ${({ theme }) => theme.colors.primary};
         border-color: ${({ theme }) => theme.colors.primary};
       }

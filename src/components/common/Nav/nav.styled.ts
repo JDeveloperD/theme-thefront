@@ -96,7 +96,7 @@ const NavHeader = styled.header`
 const NavContainer = styled.div`
   position: absolute;
   top: 0;
-  background: ${({ theme }) => theme.colors.navBackground};
+  background: ${({ theme }) => theme.colors.backgroundContent};
   width: 100%;
   max-width: 300px;
   height: 100%;
