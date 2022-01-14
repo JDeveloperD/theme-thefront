@@ -1,6 +1,6 @@
 const Text = ({ children }) => {
   return (
-    <p>{children}</p>
+    <p colorText={color}>{children}</p>
   )
 }
 

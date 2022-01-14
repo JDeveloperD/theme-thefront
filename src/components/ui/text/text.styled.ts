@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { FONTS_SIZES, MEDIA_BREAKPOINTS } from 'styles/variables'
 
 const TitleFontLarge = styled.h1`
+  color: ${({ theme, colorText }) => theme.colors[colorText]};
   font-size: ${FONTS_SIZES.xlarge};
   font-weight: 600;
 
@@ -17,7 +18,7 @@ const TitleFontLarge = styled.h1`
 `
 
 const LeadFont = styled.p`
-  color: ${({ theme }) => theme.colors.secondary};
+  color: ${({ theme, colorText }) => theme.colors[colorText]};
   font-size: 1.125rem;
   line-height: 1.6;
   margin-bottom: 1.5rem;
@@ -28,11 +29,19 @@ const LeadFont = styled.p`
 `
 
 const TitleFont = styled.h3`
+  color: ${({ theme, colorText }) => theme.colors[colorText]};
   font-size: 2.0243rem;
+`
+
+const SmallFont = styled.small`
+  color: ${({ theme, colorText }) => theme.colors[colorText]};
+  font-size: 0.75rem;
+  line-height: 1.6;
 `
 
 export {
   TitleFontLarge,
   TitleFont,
-  LeadFont
+  LeadFont,
+  SmallFont
 }
