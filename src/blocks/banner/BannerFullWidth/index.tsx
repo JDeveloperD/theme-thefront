@@ -1,6 +1,7 @@
 import { Container, Flex } from 'styles/grid'
 import { BannerFullWidthWrapper, DividerCurveBottom, BannerCaption, BannerImage } from './bannerFullWidth.styled'
 import { TitleBanner, Lead, FigureCrypto } from 'components/ui'
+import { IconsDownload } from 'components/common'
 
 const BannerFullWidth = () => {
   return (
@@ -12,6 +13,7 @@ const BannerFullWidth = () => {
             <Lead color="secondary">
               Travelling with our app is easy. <br />Join the biggest community of travellers.
             </Lead>
+            <IconsDownload />
           </BannerCaption>
           <BannerImage>
             <FigureCrypto />

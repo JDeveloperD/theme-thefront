@@ -1,5 +1,7 @@
 export { default as Moon } from './Moon'
 export { default as Sun } from './Sun'
+export { default as AppStore } from './AppStore'
+export { default as PlayStore } from './PlayStore'
 export { default as ArrowDownLight } from './ArrowDownLight'
 export { default as ChevronDownLight } from './ChevronDownLight'
 export { default as ChevronLeftLight } from './ChevronLeftLight'

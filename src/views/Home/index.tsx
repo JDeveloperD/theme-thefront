@@ -1,5 +1,5 @@
 import DefaultLayout from 'layouts/DefaultLayout'
-import { BannerFullWidth, Pricing, Suscription } from 'blocks'
+import { Apply, BannerFullWidth, Pricing, Suscription } from 'blocks'
 import { FC } from 'react'
 
 const Home: FC = () => {
@@ -8,6 +8,7 @@ const Home: FC = () => {
       <BannerFullWidth />
       <Suscription />
       <Pricing />
+      <Apply />
     </DefaultLayout>
   )
 }
