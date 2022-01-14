@@ -28,4 +28,5 @@ export const resetButton = css`
   line-height: 1.75;
   font-size: ${FONTS_SIZES.button};
   font-weight: 400;
+  text-align: center;
 `

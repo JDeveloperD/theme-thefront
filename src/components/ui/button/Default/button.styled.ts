@@ -3,9 +3,7 @@ import { resetButton } from 'styles/mixins'
 import { BORDER_RADIUS, TRANSITIONS } from 'styles/variables'
 import { darken, lighten, rgba } from 'polished'
 
-const ButtonContainer = styled.div`
-  display: inline-block;
-
+const ButtonContainer = styled.span`
   a, button {
     ${resetButton}
 

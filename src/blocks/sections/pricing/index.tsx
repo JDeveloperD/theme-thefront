@@ -1,23 +1,23 @@
 import { CardPrice } from 'components/common'
 import { DividerCurve } from 'components/ui'
 import { Container } from 'styles/grid'
-import { SuscriptionWrapper, SuscriptionContainer } from './sucription.styled'
+import { PricingWrapper, PricingContainer } from './pricing.styled'
 
-const Suscription = () => {
+const Pricing = () => {
   return (
-    <SuscriptionWrapper>
+    <PricingWrapper>
       <Container>
         <h1>Flexible and transparent pricing</h1>
         <p>Whatever your status, our offers evolve according to your needs.</p>
       </Container>
-      <SuscriptionContainer>
+      <PricingContainer>
         <CardPrice />
         <CardPrice />
         <CardPrice />
-      </SuscriptionContainer>
+      </PricingContainer>
       <DividerCurve fill="backgroundColor" />
-    </SuscriptionWrapper>
+    </PricingWrapper>
   )
 }
 
-export default Suscription
+export default Pricing
