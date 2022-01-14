@@ -5,10 +5,12 @@ import { StateThemeType } from './themeState'
 
 const themeReducer = (state: StateThemeType, action) => {
   const { modeTheme } = state
-  const { type } = action
+  const { type, payload } = action
 
   switch (type) {
     case THEME_TYPES.THEME_TOGGLE_MODE:
+      window.localStorage.setItem('themeMode', modeTheme.mode === 'light' ? 'dark' : 'light')
+
       return {
         ...state,
         modeTheme: modeTheme.mode === 'light' ? themeDark : themeLight

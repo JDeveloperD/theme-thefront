@@ -17,7 +17,8 @@ const themeLight: DefaultTheme = {
     buttonToogleIcon: COLORS.blue,
     link: COLORS.blue,
     border: GRAY_SCALE.gray400,
-    navBackground: GRAY_SCALE.white,
+    backgroundColor: GRAY_SCALE.white,
+    backgroundContent: GRAY_SCALE.white,
     boxShadow: 'rgb(140 152 164 / 35%) 0px 3px 6px 0px'
   },
   gradients: {

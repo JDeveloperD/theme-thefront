@@ -29,8 +29,12 @@ const LeadFont = styled.p`
 `
 
 const TitleFont = styled.h3`
+  font-size: 1.8219rem;
   color: ${({ theme, colorText }) => theme.colors[colorText]};
-  font-size: 2.0243rem;
+
+  ${MEDIA_BREAKPOINTS.tablet} {
+    font-size: 2.0243rem;
+  }
 `
 
 const SmallFont = styled.small`

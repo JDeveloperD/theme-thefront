@@ -17,7 +17,8 @@ declare module 'styled-components' {
       buttonToogleIcon: string,
       link: string,
       border: string,
-      navBackground: string,
+      backgroundColor: string,
+      backgroundContent: string,
       boxShadow: string
     },
     gradients: {

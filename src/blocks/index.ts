@@ -1,3 +1,4 @@
 export { default as Header } from './header'
 export { default as Footer } from './footer'
 export { default as BannerFullWidth } from './banner/BannerFullWidth'
+export { default as Suscription } from './suscription'

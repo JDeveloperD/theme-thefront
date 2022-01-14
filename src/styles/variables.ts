@@ -31,7 +31,7 @@ export const GRAY_SCALE = {
 }
 
 export const COLORS_GRADIENTS = {
-  gradientLight: 'linear-gradient( 120deg , rgb(255, 255, 255) 0%, rgb(247, 250, 255) 100%)',
+  gradientLight: 'linear-gradient( 120deg , rgb(255, 255, 255) 15%, rgb(247, 250, 255) 100%)',
   gradientDark: 'linear-gradient(120deg , rgb(34, 43, 69) 0%, rgb(26, 33, 56) 100%)'
 }
 
