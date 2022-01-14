@@ -1,4 +1,5 @@
 import themeLight from 'styles/themes/light'
+import themeDark from 'styles/themes/dark'
 import { DefaultTheme } from 'styled-components'
 
 export type StateThemeType = {
@@ -6,8 +7,18 @@ export type StateThemeType = {
   navMain: { isOpen: boolean}
 }
 
+function getCurrentTheme () {
+  const modeThemLocalStorage = window.localStorage.getItem('themeMode')
+
+  if (modeThemLocalStorage) {
+    return modeThemLocalStorage === 'light' ? themeLight : themeDark
+  }
+
+  return themeLight
+}
+
 const stateThemeInitial: StateThemeType = {
-  modeTheme: themeLight,
+  modeTheme: getCurrentTheme(),
   navMain: { isOpen: false }
 }
 
