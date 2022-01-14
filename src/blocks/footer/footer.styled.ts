@@ -30,14 +30,27 @@ const FooterLogo = styled(Link)`
     height: 100%;
   }
 `
+
+const FooterCopy = styled.div`
+  text-align: center;
+  color: ${({ theme }) => theme.colors.secondary};
+  
+  h5 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+`
+
 const List = styled.ul`
   ${resetUl}
   text-align: center;
 `
+
 const ListItem = styled.li`
   display: inline-block;
   padding: 0.4rem;
 `
+
 const ListLink = styled(Link)`
   color: ${({ theme }) => theme.fontColor};
   text-decoration: none;
@@ -49,6 +62,7 @@ export {
   FooterWrapper,
   FooterContainer,
   FooterLogo,
+  FooterCopy,
   List,
   ListItem,
   ListLink
