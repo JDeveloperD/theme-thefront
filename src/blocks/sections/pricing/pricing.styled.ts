@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { Container } from 'styles/grid'
 import { MEDIA_BREAKPOINTS } from 'styles/variables'
 
-const SuscriptionWrapper = styled.section`
+const PricingWrapper = styled.section`
   position: relative;
   background-image: ${({ theme }) => theme.gradients.one};
 
@@ -17,7 +17,7 @@ const SuscriptionWrapper = styled.section`
   }
 `
 
-const SuscriptionContainer = styled(Container)`
+const PricingContainer = styled(Container)`
   padding-top: 2rem;
   padding-bottom: 3rem;
   display: flex;
@@ -30,6 +30,6 @@ const SuscriptionContainer = styled(Container)`
 `
 
 export {
-  SuscriptionWrapper,
-  SuscriptionContainer
+  PricingWrapper,
+  PricingContainer
 }
