@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 const FigureCryptoWrapper = styled.figure`
   width: auto;
+  max-width: 350px;
   position: relative;
   border-radius: 48px;
   box-shadow: ${({ theme }) => theme.colors.boxShadow};
