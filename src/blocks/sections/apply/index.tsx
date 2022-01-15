@@ -1,15 +1,9 @@
-
 import { IconsDownload } from 'components/common'
-import { Button, Lead, TitleSection } from 'components/ui'
-import { FunctionComponent } from 'react'
+import { Lead, TitleSection } from 'components/ui'
 import { Container } from 'styles/grid'
-import { ApplyGroup, ApplyWrapper, ApplyGroupIcons } from './apply.styled'
+import { ApplyGroup, ApplyWrapper } from './apply.styled'
 
-interface ApplyProps {
-
-}
-
-const Apply: FunctionComponent<ApplyProps> = () => {
+const Apply = () => {
   return (
     <ApplyWrapper>
       <Container>
@@ -20,7 +14,6 @@ const Apply: FunctionComponent<ApplyProps> = () => {
             <Lead>Apply in 15 minutes</Lead>
             <p>Get your dream mobile app without the hassle.</p>
           </div>
-
           <IconsDownload />
         </ApplyGroup>
       </Container>
