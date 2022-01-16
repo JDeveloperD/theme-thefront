@@ -1,7 +1,6 @@
-import React, { FC, useContext, useEffect, useReducer } from 'react'
+import { FC, useContext, useReducer } from 'react'
 import { ThemeProvider } from 'styled-components'
 import { GlobalStyles } from 'styles'
-import { TYPE_THEME } from '.'
 import ThemeContext from './ThemeContext'
 import themeReducer from './themeReducer'
 import { stateThemeInitial } from './themeState'
@@ -21,7 +20,7 @@ const ThemeProviderGlobal: FC = ({ children }) => {
 }
 
 const ThemeStyledComponent: FC = ({ children }) => {
-  const [storeTheme, dispatchTheme] = useContext(ThemeContext)
+  const [storeTheme] = useContext(ThemeContext)
   const { modeTheme } = storeTheme
 
   return (

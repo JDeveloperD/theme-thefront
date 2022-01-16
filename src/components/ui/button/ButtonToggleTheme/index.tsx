@@ -7,8 +7,10 @@ const ButtonToggleTheme = () => {
   const [storeTheme, dispatchTheme] = useContext(ThemeContext)
   const { modeTheme } = storeTheme
 
+  const handleThemeColors = () => dispatchTheme({ type: TYPE_THEME.THEME_TOGGLE_MODE })
+
   return (
-    <ButtonToggleContainer onClick={() => dispatchTheme({ type: TYPE_THEME.THEME_TOGGLE_MODE })}>
+    <ButtonToggleContainer onClick={handleThemeColors}>
       {modeTheme.mode === 'light'
         ? (
           <Moon />

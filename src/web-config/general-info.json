@@ -1,0 +1,105 @@
+{
+  "nameProject": "theFront",
+  "author": "David Sandoval",
+  "email": "ing.david1993@gmail.com",
+  "phone": {
+    "string": "+51 973 643 140",
+    "whatsapp": "973643140"
+  },
+  "socialNetworks": [
+    {
+      "name": "linkedin",
+      "url": "https://www.linkedin.com/in/david-sandoval-307681225/"
+    }
+  ],
+  "nav": [
+    {
+      "text": "Landings",
+      "to": "/",
+      "subItems": [
+        {
+          "text": "Mobile App",
+          "to": "/landing/mobile-app"
+        },
+        {
+          "text": "Start Up",
+          "to": "/landing/start-up"
+        },
+        {
+          "text": "Marketing",
+          "to": "/marketing"
+        },
+        {
+          "text": "Enterprise",
+          "to": "/enterprise"
+        },
+        {
+          "text": "Design Company",
+          "to": "/design-company"
+        },
+        {
+          "text": "Overview",
+          "to": "/overview"
+        },
+        {
+          "text": "E-Learning",
+          "to": "/e-learning"
+        },
+        {
+          "text": "Rental",
+          "to": "/rental"
+        },
+        {
+          "text": "Logistics",
+          "to": "/logistics"
+        }
+      ]
+    },
+    {
+      "text": "Company",
+      "to": "/company"
+    },
+    {
+      "text": "Pages",
+      "to": "/pages",
+      "subItems": [
+        {
+          "text": "Help Center: Overview",
+          "to": "/help-center"
+        },
+        {
+          "text": "Help Center Article",
+          "to": "/help-center-article"
+        },
+        {
+          "text": "FAQ",
+          "to": "/faq"
+        },
+        {
+          "text": "Error 404: Simple",
+          "to": "/error-404-simple"
+        },
+        {
+          "text": "Error 404: Cover",
+          "to": "/error-404-cover"
+        },
+        {
+          "text": "Career Page Minimal",
+          "to": "/career-page-minimal"
+        }
+      ]
+    },
+    {
+      "text": "Account",
+      "to": "/account"
+    },
+    {
+      "text": "Blog",
+      "to": "/blog"
+    },
+    {
+      "text": "Porftolio",
+      "to": "/portfolio"
+    }
+  ]
+}

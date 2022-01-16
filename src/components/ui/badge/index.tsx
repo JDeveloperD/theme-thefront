@@ -1,8 +1,13 @@
+import { FC } from 'react'
 import { BadgeContainer } from './badge.styled'
 
-const Badge = ({ children, ...props }) => {
+interface IBadge {
+  color?: string
+}
+
+const Badge: FC<IBadge> = ({ children, color, ...props }) => {
   return (
-    <BadgeContainer {...props}>
+    <BadgeContainer backgroundColor={color} {...props}>
       {children}
     </BadgeContainer>
   )

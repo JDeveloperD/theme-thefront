@@ -1,9 +1,13 @@
 import styled from 'styled-components'
 import { FONTS_SIZES, BORDER_RADIUS } from 'styles/variables'
 
-const BadgeContainer = styled.span`
+interface IBadgeWrapper {
+  backgroundColor?: string
+}
+
+const BadgeContainer = styled.span<IBadgeWrapper>`
   display: inline-flex;
-  background: ${({ theme, color }) => theme.colors[color]};
+  background: ${({ theme, backgroundColor }) => theme.colors[backgroundColor]};
   color: white;
   border-radius: ${BORDER_RADIUS.sm};
   font-size: ${FONTS_SIZES.sm};

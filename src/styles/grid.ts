@@ -47,10 +47,16 @@ export const Row = styled.div`
   }
 `
 
-export const Flex = styled.div`
+interface IFex {
+  alignItems?: string
+  justifyContent?: string
+  gap?: number
+}
+
+export const Flex = styled.div<IFex>`
   display: flex;
   flex-wrap: wrap;
   align-items: ${p => p.alignItems ?? null};
   justify-content: ${p => p.justifyContent ?? null};
-  gap: ${p => p.gap ?? null}
+  gap: ${p => `${p.gap}rem` ?? null};
 `

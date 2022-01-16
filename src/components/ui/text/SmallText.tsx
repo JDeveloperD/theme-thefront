@@ -1,6 +1,8 @@
+import { FC } from 'react'
 import { SmallFont } from './text.styled'
+import { PropsText } from './Text'
 
-const SmallText = ({ children, color }) => {
+const SmallText: FC<PropsText> = ({ children, color }) => {
   return <SmallFont colorText={color}>{children}</SmallFont>
 }
 

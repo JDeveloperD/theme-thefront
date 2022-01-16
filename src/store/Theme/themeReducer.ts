@@ -3,7 +3,12 @@ import themeDark from 'styles/themes/dark'
 import themeLight from 'styles/themes/light'
 import { StateThemeType } from './themeState'
 
-const themeReducer = (state: StateThemeType, action) => {
+interface IAction {
+  type?: string,
+  payload: any
+}
+
+const themeReducer = (state: StateThemeType, action: IAction) => {
   const { modeTheme } = state
   const { type, payload } = action
 
@@ -18,7 +23,7 @@ const themeReducer = (state: StateThemeType, action) => {
     case THEME_TYPES.THEME_TOGGLE_NAV_MAIN:
       return {
         ...state,
-        navMain: { isOpen: !state.navMain.isOpen }
+        navMain: { ...state.navMain, isOpen: !state.navMain.isOpen }
       }
     default:
       return state

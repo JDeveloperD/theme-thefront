@@ -2,7 +2,11 @@ import { linearGradient, rgba } from 'polished'
 import styled from 'styled-components'
 import { FONTS_SIZES, MEDIA_BREAKPOINTS } from 'styles/variables'
 
-const TitleFontLarge = styled.h1`
+interface IText {
+  colorText?: string
+}
+
+const TitleFontLarge = styled.h1<IText>`
   color: ${({ theme, colorText }) => theme.colors[colorText]};
   font-size: ${FONTS_SIZES.xlarge};
   font-weight: 600;
@@ -17,7 +21,7 @@ const TitleFontLarge = styled.h1`
   }
 `
 
-const LeadFont = styled.p`
+const LeadFont = styled.p<IText>`
   color: ${({ theme, colorText }) => theme.colors[colorText]};
   font-size: 1.125rem;
   line-height: 1.6;
@@ -28,7 +32,7 @@ const LeadFont = styled.p`
   }
 `
 
-const TitleFont = styled.h3`
+const TitleFont = styled.h3<IText>`
   font-size: 1.8219rem;
   color: ${({ theme, colorText }) => theme.colors[colorText]};
 
@@ -37,7 +41,7 @@ const TitleFont = styled.h3`
   }
 `
 
-const SmallFont = styled.small`
+const SmallFont = styled.small<IText>`
   color: ${({ theme, colorText }) => theme.colors[colorText]};
   font-size: 0.75rem;
   line-height: 1.6;
