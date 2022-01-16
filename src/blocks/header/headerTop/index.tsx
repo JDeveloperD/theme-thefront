@@ -7,7 +7,7 @@ const HeaderTop = () => {
   return (
     <HeaderTopContent>
       <Container>
-        <Flex justifyContent="flex-end" alignItems="center" gap="0.5rem">
+        <Flex justifyContent="flex-end" alignItems="center" gap={0.5}>
           <Link to="/about">
             Demos <Badge color="primary">new</Badge>
           </Link>

@@ -5,16 +5,16 @@ import {
   NavListItem
 } from './nav.styled'
 import { ChevronDownLight, ChevronUpLight } from 'components/icons'
-import { useState } from 'react'
+import { FC, useState } from 'react'
 import { useLocation } from 'react-router-dom'
 
-export type NavItemProps = {
+export type PropsNavItem = {
   text: string;
-  to: string;
-  subItems?: Array<NavItemProps>;
+  to?: string;
+  subItems?: Array<PropsNavItem>;
 }
 
-const NavItem = ({ text, subItems, to }: NavItemProps) => {
+const NavItem: FC<PropsNavItem> = ({ text, subItems, to }) => {
   const [toogleSubItems, setToggleSubItems] = useState(false)
   const { pathname } = useLocation()
 

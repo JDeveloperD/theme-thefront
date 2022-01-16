@@ -1,10 +1,17 @@
 import themeLight from 'styles/themes/light'
 import themeDark from 'styles/themes/dark'
 import { DefaultTheme } from 'styled-components'
+import { PropsNavItem } from 'components/common/nav/NavItem'
+import generalInfo from 'web-config/general-info.json'
+
+const { nav } = generalInfo
 
 export type StateThemeType = {
   modeTheme: DefaultTheme,
-  navMain: { isOpen: boolean}
+  navMain: {
+    isOpen: boolean,
+    items: Array<PropsNavItem>
+  }
 }
 
 function getCurrentTheme () {
@@ -17,9 +24,10 @@ function getCurrentTheme () {
   return themeLight
 }
 
-const stateThemeInitial: StateThemeType = {
+export const stateThemeInitial: StateThemeType = {
   modeTheme: getCurrentTheme(),
-  navMain: { isOpen: false }
+  navMain: {
+    isOpen: false,
+    items: nav
+  }
 }
-
-export { stateThemeInitial }

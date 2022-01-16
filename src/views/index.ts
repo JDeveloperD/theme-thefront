@@ -1,3 +1,5 @@
 export { default as Home } from './Home'
 export { default as About } from './About'
 export { default as NotFound404 } from './404'
+export { default as StartUp } from './Landings/StartUp'
+export { default as MobileApp } from './Landings/MobileApp'

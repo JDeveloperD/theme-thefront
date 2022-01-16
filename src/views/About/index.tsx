@@ -1,7 +1,11 @@
 import DefaultLayout from 'layouts/DefaultLayout'
-const About = () => {
+import { FC } from 'react'
+
+const About: FC = () => {
   return (
-    <DefaultLayout>About</DefaultLayout>
+    <DefaultLayout>
+      <h1>About</h1>
+    </DefaultLayout>
   )
 }
 

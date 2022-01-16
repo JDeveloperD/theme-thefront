@@ -183,7 +183,7 @@ const NavWrapper = styled.nav`
     ${NavListChildren} {
       display: flex;
       flex-direction: column;
-      background: ${({ theme }) => theme.colors.navBackground};
+      background: ${({ theme }) => theme.colors.backgroundContent};
       min-width: 250px;
       max-width: 250px;
       position: absolute;

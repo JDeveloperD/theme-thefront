@@ -1,5 +1,4 @@
 import { FigureCryptoWrapper } from 'components/ui/figure/FigureCrypto/figureCrypto.styled'
-import { linearGradient, rgba } from 'polished'
 import styled from 'styled-components'
 import { Container, Flex } from 'styles/grid'
 import { MEDIA_BREAKPOINTS } from 'styles/variables'
@@ -47,19 +46,8 @@ const BannerImage = styled.div`
   }
 `
 
-const DividerCurveBottom = styled.svg`
-  position: absolute;
-  bottom: 0;
-  z-index: 4;
-
-  path {
-    fill: ${({ theme }) => theme.backgroundColor};
-  }
-`
-
 export {
   BannerFullWidthWrapper,
-  DividerCurveBottom,
   BannerCaption,
   BannerImage
 }

@@ -1,6 +1,11 @@
+import { FC } from 'react'
 import { DividerCurveWrapper } from './dividerCurve.styled'
 
-const DividerCurve = ({ fill }) => {
+interface IDivider {
+  fill?: string
+}
+
+const DividerCurve: FC<IDivider> = ({ fill }) => {
   return (
     <DividerCurveWrapper
       preserveAspectRatio="none"

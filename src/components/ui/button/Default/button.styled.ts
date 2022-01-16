@@ -3,7 +3,12 @@ import { resetButton } from 'styles/mixins'
 import { BORDER_RADIUS, TRANSITIONS } from 'styles/variables'
 import { darken, lighten, rgba } from 'polished'
 
-const ButtonContainer = styled.span`
+interface IBtn {
+  type?: string
+  shape?: string
+}
+
+const ButtonContainer = styled.span<IBtn>`
   a, button {
     ${resetButton}
 

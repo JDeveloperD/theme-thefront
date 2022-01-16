@@ -1,6 +1,6 @@
 import { Container, Flex } from 'styles/grid'
-import { BannerFullWidthWrapper, DividerCurveBottom, BannerCaption, BannerImage } from './bannerFullWidth.styled'
-import { TitleBanner, Lead, FigureCrypto } from 'components/ui'
+import { BannerFullWidthWrapper, BannerCaption, BannerImage } from './bannerFullWidth.styled'
+import { TitleBanner, Lead, FigureCrypto, DividerCurve } from 'components/ui'
 import { IconsDownload } from 'components/common'
 
 const BannerFullWidth = () => {
@@ -20,15 +20,7 @@ const BannerFullWidth = () => {
           </BannerImage>
         </Flex>
       </Container>
-      <DividerCurveBottom
-        preserveAspectRatio="none"
-        xmlns="http://www.w3.org/2000/svg"
-        x="0px"
-        y="0px"
-        viewBox="0 0 1920 100.1"
-      >
-        <path d="M0,0c0,0,934.4,93.4,1920,0v100.1H0L0,0z"></path>
-      </DividerCurveBottom>
+      <DividerCurve fill="backgroundColor" />
     </BannerFullWidthWrapper>
   )
 }

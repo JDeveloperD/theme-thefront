@@ -1,6 +1,10 @@
 import styled from 'styled-components'
 
-const DividerCurveWrapper = styled.svg`
+interface IDividerStyled {
+  fillColor?: string
+}
+
+const DividerCurveWrapper = styled.svg<IDividerStyled>`
   position: absolute;
   bottom: 0;
   z-index: 4;
